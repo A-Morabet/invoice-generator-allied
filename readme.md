@@ -13,8 +13,8 @@ generate a calendar based on the following user input:
 It will then proceed to create a list of dates that respect the
 conditions given by the user. The calendar is then rendered
 on a table alongside the patient's name, fees and total amount.
-It also has an option to be toggled off and the invoice can 
-also be printed without any buttons through the "Print Invoice" button.
+Both calendar and table can be toggled off and the invoice can 
+also be printed with hidden buttons through the "Print Invoice" button.
 
 Made with HTML, Javascript and CSS only.
 
