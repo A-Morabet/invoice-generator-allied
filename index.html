@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Invoice Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header></header>
+<body>
+ 
+<div class="allWrapper"> 
+<!--Wraps the invoice heading-->
+
+<div class="headingWrapper"> 
+    <div class="heading">
+        <div class="headerLeft">
+            <input type="text" name="companyName" id="companyName" class="all" placeholder="Type Company Name Here" style="text-align: center;" maxlength="20">
+            <input type="text" name="emailName" id="emailName" class="all" placeholder="Type Email Here" style="text-align: center;" maxlength="23">
+            <input type="text" name="numberName" id="numberName" class="all" placeholder="Type Phone Number Here" style="text-align: center;" maxlength="21">
+            <textarea name="addressName" id="addressName" class="all" placeholder="Type Company Address Here" cols ="2" rows="2" style="text-align:center;" maxlength="56"></textarea>
+        <div class="invoiceNDiv">
+            <label>INVOICE Nº</label>
+            <input type="text" id="numInvoice" class="fields all" style="text-align: center;" placeholder="Type Invoice Nº" maxlength="5">
+        </div>
+        </div>
+        
+        <div class="headerRight">
+            <img id="uploadedLogo" class="logo" src="https://fakeimg.pl/600x400?text=Logo" alt="Logo Image" style="text-align: center;"> 
+            <label for="logoInput" id="logoLabel" class="logoBrowse"><i class ="icon fa-solid fa-camera"></i>Upload Logo</label>
+            <input type="file" accept="image/*" id="logoInput" class="logoBrowse">
+        </div>
+    </div>
+</div>
+
+<!--Wraps middle invoice section, containing input fields-->
+    
+
+    <div class="bodyWrapper">
+        <div class="detailsDiv">
+            <h2>INVOICE DETAILS</h2>
+        </div>
+        <!--Invoice details section-->
+
+        <div class="bodyDivInvDet">
+            
+            <div class="divInvDet">
+                <label>Last Name</label>
+                <input type="text" class="fields all"  oninput="this.value = this.value.replace(/[^a-zA-Z]+/g, '')">
+            </div> 
+    
+            <div class="divInvDet">
+                <label>First Name</label>
+                <input type="text" class="fields all" id="fName" oninput="this.value = this.value.replace(/[^a-zA-Z]+/g, '')">
+                
+            </div>  
+            <p class="pError opa" id="errorFName">Please input First Name</p>
+
+            <div class="divInvDet">
+            <label>Diagnostic</label>
+            <input type="text" class="fields all" >
+            </div>
+    
+            <div class="divInvDet">
+            <label>Age</label>
+            <input type="text" class="fields all" oninput="this.value = this.value.replace(/\D+/g, '')">
+            </div>
+    
+            <div class="divInvDet">
+            <label>Rehabilitation Type</label>
+            <input type="text" class="fields all" oninput="this.value = this.value.replace(/[^a-zA-Z]+/g, '')">
+            </div>
+    
+            <div class="divInvDet">
+            <label>Session Amount</label>
+            <input inputmode="numeric" class="all" id="sessionAmount" maxlength="2" oninput="this.value = this.value.replace(/\D+/g, '')">
+            </div>
+            <p class="pError opa" id="errorSAmount">Please input Session Amount</p>
+    
+            <div class="divInvDet">
+            <label>Session Fee</label>
+            <input type="text" id="feeAmount" class="all" oninput="this.value = this.value.replace(/\D+/g, '')">
+            </div>
+            <p class="pError opa" id="errorSFee">Please input Session Fee</p>
+        
+            <div class="divInvDet">
+            <label>Total</label>
+            <input type="text" class="all" id="totalAmount" oninput="this.value = this.value.replace(/\D+/g, '')">
+            </div>
+            <div class="buttonDiv">
+                <button type="button" id="clearButton" class="buttonInvoice clear"><i class="icon fa-solid fa-eraser"></i>Clear All Input</button>
+            </div>
+        </div>
+        
+        <!--Additional details section-->
+        <div class="addiDetailsDiv">
+            <h2>ADDITIONAL DETAILS</h2>
+        </div>
+        <div class="bodyDivAddiDet">
+            
+            <div class="divAddiDet">
+                <label>Currency</label>
+                <select id="currencyDrop">
+                    <option value="USD">US ($)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="MAD">MAD (DH)</option>
+                </select>
+            </div>
+            <div class="divAddiDet">
+                <label id="sDateLabel">Starting Date</label>
+                <input type="date" id="startingDate" class="fields all" >
+            </div>
+            <p class="pError opa" id="errorSDate">Please input Starting Date</p>
+            <div class="divAddiDet">
+            <label>Due Date</label>
+            <input type="date" id="issueDate" class="fields all">
+        </div>
+        </div>
+    </div>
+    
+<!--Wraps lower invoice section containing the calendar options-->
+
+    <div class="settings" id="calendarDiv">
+        <div class="settingsDetailsDiv">
+            <h2>CALENDAR</h2>
+        </div>
+        <div class="insideSettingsDiv">
+        <div class="calendaryEnable">
+        <label>Include Calendary</label><input type="checkbox" name="schedule" id="schedule">
+        </div>
+        <div class="daysWeekDiv" id="daysWeek">
+            <div class="checkDiv"><label class="dayLabel">Mon</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Mon"></div>
+            <div class="checkDiv"><label class="dayLabel">Tue</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Tue"></div>
+            <div class="checkDiv"><label class="dayLabel">Wed</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Wed"></div>
+            <div class="checkDiv"><label class="dayLabel">Thu</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Thu"></div>
+            <div class="checkDiv"><label class="dayLabel">Fri</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Fri"></div>
+            <div class="checkDiv"><label class="dayLabel">Sat</label><input type="checkbox" name="dayWeek" id="dayWeek" value="Sat"></div>
+        </div>
+        <p class="pError opa" id="errorCheckDays">Please Check Session Days</p>
+        <div class="createCalendar buttonDiv">
+            <button type="button" class="buttonInvoice" id="calendarButton"><i class="icon fa fa-calendar"></i>Generate Calendar</button>
+            <button id="prButton" type="button" class="buttonInvoice"><i class="icon fa-solid fa-print"></i>Print Invoice</button>
+        </div>
+        </div>
+
+        <!--Loading Spinner for Table-->
+
+    <div class="spinDiv" id="spinnerDiv">
+        <div class="spin"></div>
+        <div class="spinText"><p>Generating Table...</p></div>
+    </div>
+    </div>
+    
+<!--Wraps bottom invoice section containing the calendar table-->
+    
+<div class="tableWrapper" id="tableDivId">
+    <div class="tableDiv" id="tableDivHide">
+        <table id="calTable">
+            <thead>
+            <tr class="tableHead">
+                <th class="nameC">Name</th>
+                <th>Date</th>
+                <th>Session Amount</th>
+                <th class="feeC">Fee</th>
+            </tr>
+            </thead>
+            <tbody id="tableBodyData">
+            <tr class="tableData">
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td class="lastCLeft"></td>
+                <td></td>
+                <td class="totalCell">Total</td>
+                <td class="totalCell lastCRight">N/A</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="filler">
+    
+</div>
+
+</div>
+    
+</body>
+
+<script type="module" src="main.js"></script> 
+
+</html>
