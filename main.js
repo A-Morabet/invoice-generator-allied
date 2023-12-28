@@ -17,7 +17,6 @@ setCalendarBox(); // Sets calendar toggle on init
 setDropdownValue(); // Sets dropdown value on init
 checkEnabledDays(); // Sets checked days on init
 
-
     // Buttons, checkboxes and table init
 
 let clearAllButton = document.getElementById("clearButton");

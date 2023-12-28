@@ -23,6 +23,7 @@ let tableDivHid = document.getElementById("tableDivHide");
 
 function setDropdownValue(){
     selectDrop.value = "MAD";
+    
 }
 
 // Listens for days checked for calendar and adds them to Array

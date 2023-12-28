@@ -49,7 +49,6 @@ label {
     background-color: rgb(38, 95, 218);
     border-radius: inherit;
     display: grid;
-    
 }
 
 #startingDate,#issueDate{

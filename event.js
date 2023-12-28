@@ -7,6 +7,7 @@ let lastExecution = 0;
 
 let selectDrop = document.getElementById("currencyDrop");
 
+
 // Event for blur on keydown for rest of inputs
 let inputFields = document.getElementsByClassName("fields");
 let inputFieldsV = Object.values(inputFields);
