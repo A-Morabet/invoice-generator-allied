@@ -1,6 +1,6 @@
 # Invoice Generator with Dynamic Calendar
 
-Locally hosted web app for invoice generation specially suited
+Web app for invoice generation specially suited
 for allied health professionals since it allows to dynamically
 generate a calendar based on the following user input:
 
