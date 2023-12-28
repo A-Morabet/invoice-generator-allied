@@ -3,6 +3,10 @@
     print-color-adjust: exact;
 }
 
+body{
+    background-color: rgb(194, 194, 194);
+}
+
 h2{
  text-align: center;
  color: rgb(77, 76, 76);  
