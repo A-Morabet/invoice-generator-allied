@@ -20,5 +20,4 @@ Made with HTML, Javascript and CSS only.
 
 -Amin Morabet
 
-
 Link to Github Page: https://A-Morabet.github.io/invoice-generator-allied
