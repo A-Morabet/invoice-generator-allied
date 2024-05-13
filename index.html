@@ -10,18 +10,18 @@
 <header></header>
 <body>
  
-<div class="allWrapper"> 
+<div class="allWrapper" id="shadowDiv"> 
 <!--Wraps the invoice heading-->
 
 <div class="headingWrapper"> 
     <div class="heading">
         <div class="headerLeft">
-            <input type="text" name="companyName" id="companyName" class="all" placeholder="Type Company Name Here" style="text-align: center;" maxlength="20">
+            <input type="text" name="companyName" id="companyName" class="all" placeholder="Type Name Here" style="text-align: center;" maxlength="20">
             <input type="text" name="emailName" id="emailName" class="all" placeholder="Type Email Here" style="text-align: center;" maxlength="23">
             <input type="text" name="numberName" id="numberName" class="all" placeholder="Type Phone Number Here" style="text-align: center;" maxlength="21">
             <textarea name="addressName" id="addressName" class="all" placeholder="Type Company Address Here" cols ="2" rows="2" style="text-align:center;" maxlength="56"></textarea>
         <div class="invoiceNDiv">
-            <label>INVOICE Nº</label>
+            <label id ="invoiceLabelId">INVOICE Nº</label>
             <input type="text" id="numInvoice" class="fields all" style="text-align: center;" placeholder="Type Invoice Nº" maxlength="5">
         </div>
         </div>

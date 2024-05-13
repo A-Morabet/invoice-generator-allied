@@ -258,14 +258,17 @@ function openPrint(){
     let printButton = document.getElementById("prButton");
     let logoButton = document.getElementById("logoLabel");
     let clearButton = document.getElementById("clearButton");
+    let shadowDiv = document.getElementById("shadowDiv");
 
     const buttonArray = [calendarDivision,logoButton,clearButton];
     buttonArray.forEach((buttonElement) => {
         buttonElement.style.display = "none";
     });
 
+    shadowDiv.style.boxShadow = "0px 0px 0px"
+
     print();
-    onfocus = returnButtons;
+    onfocus = returnButtons();
 }
 
 // Handles button showing when print window is closed
@@ -278,12 +281,15 @@ function returnButtons(){
     let logoButton = document.getElementById("logoLabel");
     let clearButton = document.getElementById("clearButton");
 
-    const buttonArray = [calendarDivision,logoButton,clearButton];
+    const buttonArray = [logoButton,clearButton];
 buttonArray.forEach((buttonElement) => {
-        buttonElement.style.display = "grid";
-        buttonElement.style.justifyContent = "center";
-        buttonElement.style.alignItems = "center";
+
+        buttonElement.style.display = "block";
+        // buttonElement.style.justifyContent = "center";
+        // buttonElement.style.alignItems = "center";
     });
+    calendarDivision.style = "block";
+    shadowDiv.style.boxShadow = "10px 8px 5px rgb(180,180,180)";
 }
 
 export{eventHandler,formatTotal,formatCurrency,clearInputs,openPrint};
