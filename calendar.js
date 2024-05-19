@@ -12,12 +12,16 @@ let inputSDate = document.getElementById("startingDate");
 let startingDateLabel = document.getElementById("sDateLabel");
 let tableCalDiv = document.getElementById("tableDivId");
 let calendarButton = document.getElementById("calendarButton");
+let printButton = document.getElementById("prButton");
 let canRunCalendar = false;
 let dayCheckboxes = document.querySelectorAll("input[type=checkbox][name=dayWeek]")
 let enabledDays = []
 let hideSpin;
 let genTable;
 let tableDivHid = document.getElementById("tableDivHide");
+
+
+
 
 // Sets default value from dropdown
 
@@ -84,6 +88,11 @@ function turnOffSettings(){
     startingDateLabel.hidden = true;
     inputSDate.hidden = true;
     tableCalDiv.hidden = true;
+
+    //Adds class for smaller phones responsiveness
+
+    calendarButton.classList.remove("mobile");
+    printButton.classList.remove("mobile");
 }
 
 // Toggles off calendar options
@@ -94,6 +103,12 @@ function turnOnSettings(){
     startingDateLabel.hidden = false; 
     inputSDate.hidden = false;
     tableCalDiv.hidden = false;
+
+    //Adds class for smaller phones responsiveness
+
+    calendarButton.classList.add("mobile");
+    printButton.classList.add("mobile");
+
 }
 
 // Triggers the calendar creation process

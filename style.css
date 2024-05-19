@@ -240,7 +240,7 @@ input[type="file"] {
     width: 180px;
     height: 40px;
     font-size: 1rem;
-    transition: 0.3s;
+    transition: color 0.3s;
     cursor: pointer;
 }
 
@@ -527,8 +527,12 @@ td{
 {
     /* Adjusts button and font-size on mobile */
     .buttonInvoice{
-        font-size: 13px;
+        
 
+    }
+
+    .mobile{
+        width: 50%;
     }
 
     /* Adjusts table size on mobile */
