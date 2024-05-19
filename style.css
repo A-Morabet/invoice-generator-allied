@@ -508,8 +508,8 @@ td{
 {
     /* Adjusts button and font-size on mobile */
     .buttonInvoice{
-        font-size: 13px;
-        max-width: 40%;
+        font-size: 14px;
+        max-width: auto;
     }
 
     /* Adjusts table size on mobile */
@@ -520,6 +520,26 @@ td{
     .tableDiv{
         max-width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 435px)
+{
+    /* Adjusts button and font-size on mobile */
+    .buttonInvoice{
+        font-size: 13px;
+
+    }
+
+    /* Adjusts table size on mobile */
+
+    .tableWrapper{
+        font-size: 10px;
+        width: auto;
+    }
+    .tableDiv{
+        margin: 0 auto;
+        padding: 5px;
     }
 }
 
