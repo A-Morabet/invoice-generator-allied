@@ -26,7 +26,7 @@ also be printed with hidden buttons through the "Print Invoice" button.
 
 ### Prerequisites
 
-No plugins, addons, or packages are needed to run this project locally.
+No packages are needed to run this project locally.
 
 ### Installation
 
