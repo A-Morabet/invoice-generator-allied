@@ -1,6 +1,8 @@
 # Invoice Generator with Dynamic Calendar
 
+<div align="center>
 <img src="https://github.com/A-Morabet/invoice-generator-allied/blob/main/invoice2.png" width="600"/>
+</div>
 
 Web app for invoice generation specially suited
 for allied health professionals since it allows to dynamically
@@ -18,11 +20,14 @@ on a table alongside the patient's name, fees and total amount.
 Both calendar and table can be toggled off and the invoice can 
 also be printed with hidden buttons through the "Print Invoice" button.
 
-Built with:
+### Prerequisites
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
 
 Made with HTML, Javascript and CSS only.
 
