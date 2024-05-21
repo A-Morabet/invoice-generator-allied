@@ -36,7 +36,7 @@ No packages are needed to run this project locally.
    ```
 2. Run live server in source code editor.
 
-Made with HTML, Javascript and CSS.
+Made with [HTML](HTML), Javascript and CSS.
 
 ## Contact
 
