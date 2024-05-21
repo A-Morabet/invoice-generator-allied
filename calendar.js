@@ -232,6 +232,8 @@ function getDayName(date, locale = 'en-GB')
     return date.toLocaleDateString(locale, {weekday: 'short'});
 }
 
+// On error while creating table, this functions is called to create a dummy one in its place
+
     function generateTableError(){
 
         let calTable =  document.getElementById("calTable");
