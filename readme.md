@@ -1,10 +1,10 @@
 # Invoice Generator with Dynamic Calendar
 
-<div align="center>
+
   
 <img src="https://github.com/A-Morabet/invoice-generator-allied/blob/main/invoice2.png" width="600"/>
 
-</div>
+
 
 Web app for invoice generation specially suited
 for allied health professionals since it allows to dynamically
