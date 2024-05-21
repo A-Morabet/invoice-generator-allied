@@ -20,9 +20,9 @@ also be printed with hidden buttons through the "Print Invoice" button.
 
 Built with:
 
-* [![HTML][Next.js]][Next-url]
-* [![CSS][React.js]][React-url]
-* [![Javascript][Vue.js]][Vue-url]
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
 
 Made with HTML, Javascript and CSS only.
 
