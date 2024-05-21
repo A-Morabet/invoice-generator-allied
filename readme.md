@@ -1,7 +1,5 @@
 # Invoice Generator with Dynamic Calendar
 
-
-
 Web app for invoice generation specially suited
 for allied health professionals since it allows to dynamically
 generate a calendar based on the following user input:
@@ -21,7 +19,5 @@ also be printed with hidden buttons through the "Print Invoice" button.
 Made with HTML, Javascript and CSS only.
 
 -Amin Morabet
-
-<img src="https://github.com/A-Morabet/invoice-generator-allied/blob/main/invoice.gif" width="600">
 
 Link to Github Page: https://A-Morabet.github.io/invoice-generator-allied
