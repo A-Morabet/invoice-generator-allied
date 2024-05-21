@@ -38,6 +38,10 @@ No packages are needed to run this project locally.
 
 Made with HTML, Javascript and CSS.
 
--Amin Morabet
+## Contact
 
-Link to Github Page: https://A-Morabet.github.io/invoice-generator-allied
+Amine Morabet - hey@aminemorabet.com
+
+Project Link: [https://A-Morabet.github.io/invoice-generator-allied](https://A-Morabet.github.io/invoice-generator-allied)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
