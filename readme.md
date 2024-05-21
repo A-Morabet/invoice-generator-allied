@@ -28,9 +28,15 @@ also be printed with hidden buttons through the "Print Invoice" button.
 
 No plugins, addons, or packages are needed to run this project locally.
 
-* [![React][React.js]][React-url]
+### Installation
 
-Made with HTML, Javascript and CSS only.
+1. Clone the repo.
+   ```sh
+   git clone https://github.com/A-Morabet/invoice-generator-allied
+   ```
+2. Run live server in source code editor.
+
+Made with HTML, Javascript and CSS.
 
 -Amin Morabet
 
