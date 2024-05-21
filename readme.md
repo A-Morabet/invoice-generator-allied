@@ -6,6 +6,7 @@
 </div>
 </br>
 
+## Summary
 
 Web app for invoice generation specially suited
 for allied health professionals since it allows to dynamically
