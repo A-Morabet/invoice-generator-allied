@@ -26,12 +26,9 @@ also be printed with hidden buttons through the "Print Invoice" button.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+No plugins, addons, or packages are needed to run this project locally.
 
+* [![React][React.js]][React-url]
 
 Made with HTML, Javascript and CSS only.
 
