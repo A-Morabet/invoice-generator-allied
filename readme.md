@@ -7,6 +7,8 @@
 </div>
 </br>
 
+Made with HTML, Vanilla Javascript and CSS.
+
 ## Summary
 
 Web app for invoice generation specially suited
@@ -36,8 +38,6 @@ No packages are needed to run this project locally.
    git clone https://github.com/A-Morabet/invoice-generator-allied
    ```
 2. Run live server in source code editor.
-
-Made with HTML, Javascript and CSS.
 
 ## Contact
 
