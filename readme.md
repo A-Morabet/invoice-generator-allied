@@ -18,6 +18,12 @@ on a table alongside the patient's name, fees and total amount.
 Both calendar and table can be toggled off and the invoice can 
 also be printed with hidden buttons through the "Print Invoice" button.
 
+Built with:
+
+* [![HTML][Next.js]][Next-url]
+* [![CSS][React.js]][React-url]
+* [![Javascript][Vue.js]][Vue-url]
+
 Made with HTML, Javascript and CSS only.
 
 -Amin Morabet
