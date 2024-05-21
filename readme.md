@@ -7,7 +7,7 @@
 </div>
 </br>
 
-Made with HTML, Vanilla Javascript and CSS.
+Made with HTML, Javascript and CSS.
 
 ## Summary
 
